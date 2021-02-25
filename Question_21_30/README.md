@@ -295,7 +295,7 @@ I'(x', y') = (Sum{i=-1:2}{j=-1:2} I(x+i,y+j) * wxi * wyj) / Sum{i=-1:2}{j=-1:2} 
 ```
 -->
 
-しかし実装する時は、元画像に対して１ピクセルずつ行うと、処理後の画像で値が割り当てられない可能性がでてきてしまう。よって、処理後画像の各ピクセルに対してAffine変換の逆変換を行い、値をあ割り当てる元画像の座標を取得する必要がある。Affine変換の逆操作は次式となる。
+しかし実装する時は、元画像に対して１ピクセルずつ行うと、処理後の画像で値が割り当てられない可能性がでてきてしまう。よって、処理後画像の各ピクセルに対してAffine変換の逆変換を行い、値を割り当てる元画像の座標を取得する必要がある。Affine変換の逆操作は次式となる。
 
 <img src="assets/affine_equ6.png" width="300">
 
@@ -356,8 +356,6 @@ I'(x', y') = (Sum{i=-1:2}{j=-1:2} I(x+i,y+j) * wxi * wyj) / Sum{i=-1:2}{j=-1:2} 
 |:---:|:---:|:---:|
 |![](imori.jpg)|![](answers_image/answer_30_1.jpg)|![](answers_image/answer_30_2.jpg)|
 
-答え >> 
-
-答え 
+答え
 - Python >> [answers_py/answer_30.py](answers_py/answer_30.py) , 
 - C++ >> [answers_cpp/answer_30.cpp](answers_cpp/answer_30.cpp)
